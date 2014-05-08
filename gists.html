@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>GitHub Example</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+
+    </head>
+    <body background ="http://subtlepatterns.com/patterns/old_moon.png">
+      <div class="container theme-showcase" role="main">
+        <!-- <div class="jumbotron"> -->
+			<div class="col-sm-4">
+				<img src="http://icons.iconarchive.com/icons/visualpharm/icons8-metro-style/256/Logos-Github-icon.png">
+			</div>
+			<div class="col-sm-8">
+				<h1><br><br>Make you a GIST</h1>
+			</div>
+        <!--</div>-->
+
+
+        <!--<div class="page-header" style="border: 2px solid black">
+          <h1>Gists</h1>
+        </div>-->
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">List Gists</h3>
+              </div>
+              <div class="panel-body">
+                 <span id="gists_result"></span>
+              </div>
+            </div>
+          </div><!-- /.col-sm-8 -->
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-info" id="button_get_gists">Get Gists</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Get Gist</h3>
+              </div>
+              <div class="panel-body">
+                 <span id="gist_result"></span>
+              </div>
+            </div>
+          </div><!-- /.col-sm-8 -->
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-info" id="button_get_gist">Get Gist</button>
+            <div class="input-group input-group-sm">
+              <span class="input-group-addon">ID</span> 
+              <input type="text" class="form-control" id="gist_id">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Edit Gist</h3>
+              </div>
+              <div class="panel-body">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">Description</span> <input type="textbox" class="form-control" id="description_to_edit">
+                </div>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">Contenido</span> <textarea type="text" class="form-control" id="content_to_edit"></textarea>
+                </div>
+
+                <span id="update_result"></span>
+
+              </div>
+            </div>
+          </div><!-- /.col-sm-8 -->
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-info" id="button_edit_gist">Edit Gist</button>
+            <div class="input-group input-group-sm">
+              <span class="input-group-addon">ID</span> 
+              <input type="text" class="form-control" id="gist_id_edit">
+            </div>
+            <button type="button" class="btn btn-info" id="button_save_gist">Save Gist</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Crear un nuevo GIST</h3>
+              </div>
+              <div class="panel-body">
+
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">Descripcion</span> <input
+                    type="text" class="form-control" id="description_to_create">
+                </div>
+				
+				<div class="input-group input-group-sm">
+                  <span class="input-group-addon">Contenido</span> <textarea
+                    type="text" class="form-control" id="content_to_create"></textarea>
+                </div>
+                <span id="create_result"></span>
+
+              </div>
+            </div>
+          </div><!-- /.col-sm-8 -->
+          <div class="col-sm-4">
+             <button type="button" class="btn btn-info" id="button_to_create">Create GIST</button>
+          </div>
+        </div>
+		
+		<div class="row">
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Delete Gist</h3>
+              </div>
+              <div class="panel-body">
+                 <span id="delete_result"></span>
+              </div>
+            </div>
+          </div><!-- /.col-sm-8 -->
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-info" id="button_to_delete">Delete Gist</button>
+            <div class="input-group input-group-sm">
+              <span class="input-group-addon">ID</span> 
+              <input type="text" class="form-control" id="gist_id_delete">
+            </div>
+          </div>
+        </div>
+
+  </div>
+
+  
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+      <!-- Event and AJAX functions -->
+      <script type="text/javascript" src="gists.js"></script>
+    </body>
+  </html>
